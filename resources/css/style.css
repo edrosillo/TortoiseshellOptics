@@ -9,6 +9,12 @@ html {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 930px){
+  .container {
+    width: 100%;
+  }
+}
+
 
 /***** Header ******/
 
@@ -16,7 +22,7 @@ header {
   background-image: url(../images/glasses-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50%;
+  background-position: center;
   height: 30rem;
 }
 
@@ -24,7 +30,7 @@ header {
   position: relative;
   top: 1rem;
   background-color: cadetblue;
-  padding: 1rem 2rem;
+  padding: 1rem 0 1rem 2rem;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -42,19 +48,18 @@ header {
   padding-right: 1rem;
 }
 
-nav ul {
+.nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-nav a {
+.nav li {
+  display: inline-block;
+  padding-right: 2rem;
+}
+
+.nav a {
   color: white;
   text-decoration: none;
-}
-
-.full-nav ul a {
-  padding-right: 2rem;
 }
 
 .mobile-nav {
@@ -62,16 +67,29 @@ nav a {
 }
 
 /***** Header Big Text ******/
-.big-text {
-  float: right;
-  text-align: center;
+.white-box {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-text {
   background-color: white;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 1.2;
   padding: 1.5rem 5rem;
-  margin-top: 11rem;
-  margin-right: 8rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  line-height: 2.4rem;
+}
+
+.main-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+@media only screen and (){
+
 }
 
 /***** Company Information ******/
@@ -113,9 +131,51 @@ nav a {
   width: 3.5rem;
 }
 
-  /***** Icons ******/
+  /***** Information ******/
 
 .info {
   margin-top: 3rem;
+  margin-bottom: 5rem;
+  display: flex;
+}
 
+.info-box {
+  width: 43%;
+}
+
+.info-box p {
+  margin-top: 1rem;
+  padding-right: 10%;
+}
+
+.info-header {
+  width: 10rem;
+  background-color: cadetblue;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+.info-header h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+/***** Footer ******/
+
+footer {
+  background-color: azure;
+}
+
+.foot-info {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0 4rem 4rem;
+}
+
+.foot-info img {
+  height: 1.5rem;
+  width: auto;
+  padding-right: 1rem;
 }
