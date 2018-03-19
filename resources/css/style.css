@@ -1,0 +1,121 @@
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+/***** Header ******/
+
+header {
+  background-image: url(../images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 30rem;
+}
+
+.banner {
+  position: relative;
+  top: 1rem;
+  background-color: cadetblue;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.full-nav ul a {
+  padding-right: 2rem;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/***** Header Big Text ******/
+.big-text {
+  float: right;
+  text-align: center;
+  background-color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  margin-top: 11rem;
+  margin-right: 8rem;
+}
+
+/***** Company Information ******/
+
+  /***** Icons ******/
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  width: 5rem;
+  width: auto;
+}
+
+.icon p {
+  text-align: center;
+}
+
+.icon-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6rem;
+}
+
+.icon-image img {
+  max-width: 5rem;
+}
+
+.exams img {
+  width: 3.5rem;
+}
+
+  /***** Icons ******/
+
+.info {
+  margin-top: 3rem;
+
+}
