@@ -9,7 +9,7 @@ html {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 930px){
+@media only screen and (max-width: 980px){
   .container {
     width: 100%;
   }
@@ -22,7 +22,7 @@ header {
   background-image: url(../images/glasses-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 50%;
   height: 30rem;
 }
 
@@ -66,7 +66,36 @@ header {
   display: none;
 }
 
-/***** Header Big Text ******/
+@media only screen and (max-width: 980px){
+  header {
+    height: 22rem;
+  }
+
+  .banner {
+    top: 0rem;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .logo h3 {
+    display: none;
+  }
+
+  .full-nav{
+    display: none;
+  }
+
+  .mobile-nav{
+    display: inline-block;
+  }
+}
+
+/***** Big Text ******/
 .white-box {
   width: 960px;
   margin: 0 auto;
@@ -88,8 +117,27 @@ header {
   line-height: 1.2;
 }
 
-@media only screen and (){
+@media only screen and (max-width: 980px){
+  .main-text {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
 
+  .main-text h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .main-text {
+    margin-top: 9rem;
+    width: 100%;
+  }
+
+  .main-text h1 {
+    text-align: ;
+  }
 }
 
 /***** Company Information ******/
@@ -131,16 +179,23 @@ header {
   width: 3.5rem;
 }
 
+@media only screen and (max-width: 410px) {
+  .icons {
+    flex-direction: column;
+  }
+}
+
   /***** Information ******/
 
 .info {
   margin-top: 3rem;
   margin-bottom: 5rem;
   display: flex;
+  justify-content: center;
 }
 
 .info-box {
-  width: 43%;
+  width: 40%;
 }
 
 .info-box p {
@@ -162,6 +217,21 @@ header {
   color: white;
 }
 
+@media only screen and (max-width: 410px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .info-box {
+    width: 100%;
+  }
+
+  .info-header {
+    width: 100%;
+  }
+}
+
+
 /***** Footer ******/
 
 footer {
@@ -178,4 +248,10 @@ footer {
   height: 1.5rem;
   width: auto;
   padding-right: 1rem;
+}
+
+@media only screen and (max-width: 410px) {
+  .foot-info h3 {
+    display: none;
+  }
 }
