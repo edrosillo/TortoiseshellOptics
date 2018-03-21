@@ -130,14 +130,22 @@ header {
 }
 
 @media only screen and (max-width: 410px) {
-  .main-text {
-    margin-top: 9rem;
+  .white-box {
     width: 100%;
+    flex-direction: column;
+  }
+
+  .main-text {
+    width: 100%;
+    margin: 9rem 0 0 0;
+    padding: 1rem 0 1rem 0;
   }
 
   .main-text h1 {
-    text-align: ;
+    text-align: center;
+    font-size: 1rem;
   }
+
 }
 
 /***** Company Information ******/
@@ -182,6 +190,17 @@ header {
 @media only screen and (max-width: 410px) {
   .icons {
     flex-direction: column;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+  }
+
+  .icon {
+    justify-content: center;
+  }
+
+  .icon p {
+    font-size: 0.77rem;
+    padding: 1.54rem 0;
   }
 }
 
@@ -220,6 +239,7 @@ header {
 @media only screen and (max-width: 410px) {
   .info {
     flex-direction: column;
+    justify-content: center;
   }
 
   .info-box {
@@ -228,6 +248,17 @@ header {
 
   .info-header {
     width: 100%;
+    text-align: center;
+  }
+
+  .appointments .info-header {
+    margin-top: 4rem;
+  }
+
+  .info-box p {
+    font-size: 0.77rem;
+    padding-left: 0.4rem;
+    line-height: 1.6;
   }
 }
 
@@ -251,7 +282,16 @@ footer {
 }
 
 @media only screen and (max-width: 410px) {
+  .foot-info {
+    justify-content: center;
+  }
+
   .foot-info h3 {
     display: none;
   }
+
+  .foot-info img {
+    padding: 0rem;
+  }
+
 }
