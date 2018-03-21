@@ -284,6 +284,8 @@ footer {
 @media only screen and (max-width: 410px) {
   .foot-info {
     justify-content: center;
+    width: 100%;
+    padding: 4rem 0rem;
   }
 
   .foot-info h3 {
@@ -292,6 +294,7 @@ footer {
 
   .foot-info img {
     padding: 0rem;
+    margin: 0;
   }
 
 }
